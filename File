@@ -1,0 +1,59 @@
+your way to increasing customer and lead happiness with your personalized Thank You pages.
+
+What you'll need
+A WordPress website.
+Elementor Pro plugin setup on your WordPress site.
+About 10-15 minutes.
+We’re assuming you already have WordPress and the necessary Elementor plugins active and ready to go. If not please you may want to get your website setup first. Otherwise, much of this won’t make sense.
+
+Let's get started
+One technical aspect to note is the use of Elementor’s “Request Parameter” option which allows us to pull in the specified form field ID. This can also be used to pull in most any form field depending on your situation and what you want to achieve.
+
+Step 01 - Build Your "Thank You" Page.
+Add a new page and launch the Elementor builder.
+Add a new section. I'm using a 2 column section.
+Update section settings and styles however you'd like.
+Drag in a Heading (or Text Editor) widget and update styles however you'd like.
+Step 02 - Update Heading (Text Editor) Widget Settings.
+With Header (or Text) widget selected click the Dynamic link and choose the "Request Parameter" option.
+Reveal the settings by clicking Request Parameter text.
+For Type make sure "Get" is selected.
+Under Parameter Name type in "fname".
+Reveal the Advanced settings below.
+For Before type in "Hey ".
+For After type in ",
+For Fallback type in "Hey there,"
+Publish (or Update) your page.
+Copy the link for this page and paste it somewhere where you can easily grab it.
+Important things to note:​
+The styles and language used on this page can be changed to whatever you want.
+Make sure you correctly name your Parameter Name. In this case we are using “fname”. This parameter name directly corresponds to the input ID on the form we’ll be building.
+Make sure you correctly copied your “Thank You” page link.
+Step 03 - Build Your Contact Form Page.
+Add a new page and launch the Elementor builder.
+Add a new section. I'm using a 2 column section.
+Update section settings and styles however you'd like.
+Drag in a form widget.
+Step 04 - Update Form Widget Settings.
+Under the the ADVANCED tab type in "fname" for the ID.
+Under the the ADVANCED tab copy the Shortcode and paste it somewhere you can easily grab it.
+Under the form's Actions After Submit section add "Redirect".
+Open the new Redirect tab below, click Dynamic and select "Shortcode".
+Click Shortcode to reveal the settings. Paste the shortcode you copied earlier into the Shortcode text area.
+Under Advanced settings Before paste in your "Thank You" page link followed by "/?fname=". See sample below for how the complete URL should look.
+Under Advanced settings Fallback paste in your "Thank You" page link only.
+Sample "Shortcode":
+
+1
+[field id="fname"]
+Sample "Before" link code:
+
+1
+https://www.shiftmedia.net/demo/blog/personalized-page/thank-you/?fname=
+Step 05 - Launch and Test Your Page.
+Save your page.
+Click the preview "eye" button.
+Considerations
+You can pass different fields: You can choose most any field you want and name it to what makes sense for you. The most important thing to remember is that the field’s ID is the same on both the Form and Thank You pages.
+
+https://youtu.be/1VqlTXDzvnY
